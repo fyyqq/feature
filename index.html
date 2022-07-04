@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/5e539df1ae.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles.css">
+        <title>JS Website</title>
+    </head>
+    <body onscroll="myScroll()">
+        <div class="container">
+            <ul class="list">
+                <div class="list-container">
+                    <button class="burger-menu" onclick="myFunc()">
+                        <div class="menu list1"></div>
+                        <div class="menu list2"></div>
+                        <div class="menu list3"></div>
+                    </button>
+                    <li class="option bb" id="home" onclick="naviBtn(0)">
+                        <i class="fa-solid fa-house bar"></i>
+                        <span class="menuTxt">Home</span>
+                        <div class="popup1">
+                            <p class="list-home">Home</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Home</p>
+                        </div>
+                    </li>
+                    <li class="option bb search" onclick="naviBtn(1)">
+                        <i class="fa-solid fa-magnifying-glass bar"></i>
+                        <span class="menuTxt">Search</span>
+                        <div class="popup2">
+                            <p class="list-home">Search</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Search</p>
+                        </div>
+                    </li>
+                    <li class="option bb" onclick="naviBtn(2)">
+                        <i class="fa-solid fa-globe bar"></i>
+                        <span class="menuTxt">Explore</span>
+                        <div class="popup3">
+                            <p class="list-home">Explore</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Explore</p>
+                        </div>
+                    </li>
+                    <li class="option bb" onclick="naviBtn(3)">
+                        <i class="fa-solid fa-chart-pie bar"></i>
+                        <span class="menuTxt">Chart</span>
+                        <div class="popup4">
+                            <p class="list-home">Chart</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Chart</p>
+                        </div>
+                    </li>
+                    <li class="option bb" onclick="naviBtn(4)" ondblclick="snackBar()"> 
+                        <i class="fa-solid fa-envelope bar"></i>
+                        <span class="menuTxt">Message</span>
+                        <div class="popup5">
+                            <p class="list-home">Message</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Message</p>
+                        </div>
+                    </li>
+                    <li class="option bb" onclick="naviBtn(5)">
+                        <i class="fa-solid fa-gear bar"></i>
+                        <span class="menuTxt">Setting</span>
+                        <div class="popup6">
+                            <p class="list-home">Setting</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Setting</p>
+                        </div>
+                    </li>
+                    <li class="signUp-container option">
+                        <div class="signUp sign sign-color-btn">
+                            <p>Sign Up</p>
+                        </div>
+                        <div class="popup7">
+                            <p class="list-home">Create Profile</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Sign Up</p>
+                        </div>
+                    </li>
+                    <li class="option bb sign" onclick="naviBtn(6)">
+                        <i class="fa-solid fa-user bar"></i>
+                        <span class="menuTxt">Sign Up</span>
+                        <div class="popup8">
+                            <p class="list-home">Profile</p>
+                        </div>
+                        <div class="hover-menu">
+                            <p class="hover-txt">Profile</p>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+            <div class="scrollBorder">
+                <div class="scroll"></div>
+            </div>
+            <div class="parallax">
+                <header>
+                    <h1>Training</h1>
+                </header>
+            </div>
+            <div class="content">
+                <section>
+                    <article>
+                            <button type="button" class="btns">About 1
+                                <i class="fa-solid fa-angle-up"></i>
+                            </button>
+                            <div class="text-btns">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta molestiae numquam pariatur, rerum, quia sed magni quas iusto possimus optio perspiciatis. Consectetur magni doloribus illo impedit vitae quo earum?
+                                </p>
+                            </div>
+                            
+                            <button type="button" class="btns">About 2
+                                <i class="fa-solid fa-angle-up"></i>
+                            </button>
+                            <div class="text-btns">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta molestiae numquam pariatur, rerum, quia sed magni quas iusto possimus optio perspiciatis. Consectetur magni doloribus illo impedit vitae quo earum?
+                                </p>
+                            </div>
+                            
+                            <button type="button" class="btns">About 3
+                                <i class="fa-solid fa-angle-up"></i>
+                            </button>
+                            <div class="text-btns">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta molestiae numquam pariatur, rerum, quia sed magni quas iusto possimus optio perspiciatis. Consectetur magni doloribus illo impedit vitae quo earum?
+                                </p>
+                            </div>
+                    </article>
+                    <article>
+                        <div class="vertical-tabs">
+                            <div class="vertical-btns">
+                                <button type="button" class="verBtn" onclick="verTabs(0)">List 1</button>
+                                <button type="button" class="verBtn" onclick="verTabs(1)">List 2</button>
+                                <button type="button" class="verBtn" onclick="verTabs(2)">List 3</button>
+                            </div>
+                            <div class="vertical-text">
+                                <p class="verText">Baskin Robbins</p>
+                                <p class="verText">Burger King</p>
+                                <p class="verText">Starbuck</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="dropDown-container">
+                            <div class="dropDown-btn">
+                                <div class="dropDown-text1">
+                                    <p>Cryptocurrency, kadangkala dipanggil crypto-currency atau crypto, ialah sebarang bentuk mata wang yang wujud secara digital atau maya dan menggunakan kriptografi untuk menjamin transaksi . Mata wang kripto tidak mempunyai pihak berkuasa mengeluarkan atau mengawal selia pusat, sebaliknya menggunakan sistem terdesentralisasi untuk merekodkan urus niaga dan mengeluarkan unit baharu.</p>
+                                </div>
+                                <button type="button" class="dBtn">What is Cryptocurrency ?</button>
+                                <div class="dropDown-text2">
+                                    <p>Bitcoin ialah mata wang digital yang beroperasi tanpa sebarang kawalan pusat atau pengawasan bank atau kerajaan . Sebaliknya ia bergantung pada perisian dan kriptografi peer-to-peer. Lejar awam merekodkan semua transaksi bitcoin dan salinan disimpan pada pelayan di seluruh dunia.</p>
+                                </div>
+                                <button type="button" class="dBtn">What is Bitcoin ?</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="tabs-container">
+                            <div class="btns-container">
+                                <button type="button" class="tabBtn" onclick="myTabs(0, 'magenta')">Menu 1</button>
+                                <button type="button" class="tabBtn" onclick="myTabs(1, '#EC9B3B')">Menu 2</button>
+                                <button type="button" class="tabBtn" onclick="myTabs(2, 'rgb(111, 207, 111)')">Menu 3</button>
+                            </div>
+                            <div class="tabText-container">
+                                <p class="tabText">
+                                    <img class="tab-img" src="./images/674_kfc.jpg">
+                                </p>
+                                <p class="tabText">
+                                    <img class="tab-img" src="./images/download.png">
+                                </p>
+                                <p class="tabText">
+                                    <img class="tab-img" src="./images/Logo-Starbucks.jpg">
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="pop-up">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="login-container">
+                            <div class="profile-container">
+                                <div class="profile-img">
+                                    <img src="./images/unk.png">
+                                </div>
+                                <b>Joe Mama</b>
+                            </div>
+                            <form class="form-container">
+                                <div class="form-email">
+                                    <p>Email or Username</p>
+                                    <input type="email" id="email" placeholder="Email...">
+                                </div>
+                                <div class="form-pass">
+                                    <p>Password</p>
+                                    <input type="password" id="pass" placeholder="password">
+                                    <input type="checkbox" id="passShow" onclick="showPass()">
+                                    <div class="checkBox">
+                                        <div class="cBox">
+                                            <input type="checkbox">
+                                            <small>remember me</small>
+                                        </div>
+                                        <a href="#">forgot password</a>
+                                    </div>
+                                </div>
+                                <div class="signUp-btn">
+                                    <button type="button">Sign Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="filter-container">
+                            <h2>Filtering Text</h2>
+                            <form class="form-text-container">
+                                <input type="text" id="input" placeholder="Search..." onkeyup="myFilter()">
+                            </form>
+                            <div class="list-text">
+                                <a href="#" class="fList">Manchester city</a>
+                                <a href="#" class="fList">Arsenal</a>
+                                <a href="#" class="fList">Liverpool</a>
+                                <a href="#" class="fList">Real madrid</a>
+                                <a href="#" class="fList">Juventus</a>
+                                <a href="#" class="fList">Chelsea</a>
+                                <a href="#" class="fList">Barcelona</a>
+                                <a href="#" class="fList">Bayern Munich</a>
+                                <a href="#" class="fList">Manchester united</a>
+                                <a href="#" class="fList">Paris saint germany</a>
+                            </div>
+                            <p id="demo">Nothing up there</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="table-filter">
+                            <h4>Table Filter</h4>
+                            <form class="form-table">
+                                <input type="text" onkeyup="myTable()" placeholder="Search..." id="tInput">
+                            </form>
+                            <table>
+                                <tr>
+                                    <th>Names</th>
+                                    <th>Ages</th>
+                                </tr>
+                                <tr class="ftable">
+                                    <td>Sarah</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr class="ftable">
+                                    <td>Alif</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr class="ftable">
+                                    <td>Afiq</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr class="ftable">
+                                    <td>Elon</td>
+                                    <td>52</td>
+                                </tr>
+                                <tr class="ftable">
+                                    <td>Mike</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="ftable">
+                                    <td>Joe</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr class="ftable">
+                                    <td>Alexa</td>
+                                    <td>12</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="loader-container">
+                            <div class="loader"></div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="progress-bar">
+                            <h3>Progress Bar</h3>
+                            <div class="bar-container">
+                                <div class="bar"></div>
+                            </div>
+                            <button type="button" onclick="myBar()" class="barBtn">Start</button>
+                            <button class="barBtn reset" onclick="myBarReset()">Reset</button>
+                            <p id="demoBar"></p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="filtering-items">
+                            <h4>Button Filter</h4>
+                            <div class="fiBtn">
+                                <button class="btn" data-id="all" onclick="filterBtn(event)">ALL</button>
+                                <button class="btn" data-id="car" onclick="filterBtn(event)">Car</button>
+                                <button class="btn" data-id="animal" onclick="filterBtn(event)">Animal</button>
+                                <button class="btn" data-id="people" onclick="filterBtn(event)">People</button>
+                            </div>
+                            <div class="fiText">
+                                <div class="fiCar listFilter car" >Lamborghini</div>
+                                <div class="fiAnim listFilter animal">Cat</div>
+                                <div class="fiPeop listFilter people">Elon Musk</div>
+                                <div class="fiCar listFilter car">Ferrari</div>
+                                <div class="fiPeop listFilter people">Fyqq</div>
+                                <div class="fiCar listFilter car">Rolce Royce</div>
+                                <div class="fiAnim listFilter animal">Dog</div>
+                                <div class="fiAnim listFilter animal">Elephant</div>
+                                <div class="fiCar listFilter car">Kancil</div>
+                                <div class="fiPeop listFilter people">Joe Biden</div>
+                                <div class="fiAnim listFilter animal">Pig</div>
+                                <div class="fiCar listFilter car">Supra</div>
+                                <div class="fiAnim listFilter animal">Ant</div>
+                                <div class="fiPeop listFilter people">Bill Gates</div>
+                                <div class="fiPeop listFilter people">Warren Buffet</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="todo-list">
+                            <h2>Todo-list</h2>
+                            <form class="form-todo">
+                                <input type="text" id="todoInput" placeholder="Type...">
+                                <button type="button" id="todoBtn" onclick="myButtons()">submit</button>
+                            </form>
+                            <div class="todo-list-container">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="flip-card-container">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./images/Sarah-Perez-Photo-scaled.jpeg" id="flip-img">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Sarah Gabraham</h1>
+                                        <p>UI UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="slide-text">
+                            <div class="slide-container">
+                                <p class="slideTxt">“When something is important enough, you do it even if the odds are not in your favor.”<br><br>
+                                    <small class="qName">-Elon Musk</small>
+                                </p>
+                                <p class="slideTxt">
+                                    “Don't compare yourself with anyone in this world… if you do so, you are insulting yourself.”<br><br>
+                                    <small class="qName">-Bill Gates</small>
+                                </p>
+                                <p class="slideTxt">
+                                    “Ideas don’t come out fully formed , they only become clearer as you work on them . You just have to get started.”<br><br>
+                                    <small class="qName">-Mark Zuckerberg</small>
+                                </p>
+                                <p class="slideTxt">
+                                    “Opportunities don't happen. You create them.”<br><br>
+                                    <small class="qName">-Chris Grosser</small>
+                                </p>
+                                <p class="slideTxt">
+                                    “Successful people do what unsuccessful people are not willing to do. Don't wish it were easier; wish you were better.”<br><br>
+                                    <small class="qName">-Jim Rohn</small>
+                                </p>
+                                <i class="fa-solid fa-angle-right" onclick="mySlide(1)"></i>
+                                <i class="fa-solid fa-angle-left" onclick="mySlide(-1)"></i>
+                            </div>
+                            <div class="slide-btn">
+                                <span class="sBtn" onclick="slideBtn(1)"></span>
+                                <span class="sBtn" onclick="slideBtn(2)"></span>
+                                <span class="sBtn" onclick="slideBtn(3)"></span>
+                                <span class="sBtn" onclick="slideBtn(4)"></span>
+                                <span class="sBtn" onclick="slideBtn(5)"></span>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="snackBar">1 Message</div>
+        </div>
+        <footer>
+            <div class="btn-footer">
+                <button type="button" id="footerBtn">Show</button>
+            </div>
+            <div class="footer-container">
+                <p id="footer"></p>
+                <p class="thanks"></p>
+            </div>
+        </footer>
+    </body>
+    <script src="./script.js"></script>
+</html>
