@@ -1,6 +1,6 @@
 # Feature
 
-Introduction Feature. A todo list application that helps you manage your daily tasks easily and quickly. You can create lists, tags, and tasks with just a few clicks. You can also edit and delete your tasks at any time. Todo has a dark mode feature that protects your eyes from screen glare. This application is also responsive, meaning it can be adjusted to the screen size of your device. With Todo, you never have to worry about forgetting or missing anything again. Todo will remind you of your important tasks and make sure you complete them on time. Todo is the perfect todo list app for you who are busy and productive. Download Todo now and enjoy the convenience and efficiency it offers. Todo the app you need! 😊
+Introduction The Feature is a web application that shows features used in real world projects and is built using javascript. You can see examples of interesting and creative projects that use javascript to create functional and interesting web applications. You can also learn about javascript techniques and concepts used in these projects. The feature is a web application that is suitable for those of you who want to improve your skills and knowledge in javascript. Let's join the feature now! 😊
 
 ## Feature
 
